@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mes vidéos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles généraux */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #5479EB; /* ton bleu de fond */
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+        }
+
+        #entete-de-page {
+            padding: 5px;
+            height: 100px;
+            background-color:#EDADAD;
+            font-size: 32px;
+            font-weight: bold;
+            font-variant: small-caps;
+            text-align: center;
+        }
+
+        #bloc-menu {
+            height: 36px;
+            background-color:#EDCAAD;
+            color: white;
+        }
+
+        #bloc-menu th {
+            width: 500px;
+            text-align: center;
+        }
+
+        #bloc-menu th a {
+            color:#163880;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #bloc-menu th a:hover {
+            color: #FFFFFF;
+        }
+
+        #contenu {
+            padding: 10px;
+            background-color:  #7BBAB8;
+            color:#163880;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        #contenu h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        /* Grille vidéos 2x2 */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .video-box {
+            background-color: #7BBAB8;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .video-box iframe {
+            width: 100%;  /* prend toute la largeur de la box */
+            height: 270px; /* taille fixe comme tu voulais */
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .video-caption {
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        @media (max-width: 900px) {
+            .video-box iframe {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="entete-de-page">Mes vidéos</div>
+
+    <table id="bloc-menu" border="0">
+        <tr>
+            <th><a href="index.html">Accueil</a></th>
+            <th><a href="productions.html">Productions scolaires</a></th>
+            <th><a href="passions.html">Mes passions</a></th>
+            <th><a href="videos.html">Mes vidéos</a></th>
+            <th><a href="monsitedereve.html">Mon site de rêve</a></th>
+        </tr>
+    </table>
+
+    <div id="contenu">
+        <h1>Mes vidéos</h1>
+
+            <div class="video-caption">
+			                 <h2  class="titre-video">Tennis: Les principales règles
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
+                </div>
+          
+
+           <div class="video-caption">
+		   <h3  class="titre-video"> Tennis: Le joueur Gaël Monfils
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
+                </div>
+				
+            <div class="video-caption">
+			<h4  class="titre-video"> Les différentes comptétions dans le monde du foot 
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID3" allowfullscreen></iframe>
+                </div>
+				
+ 
+			 <div class="video-caption">
+			  <h5  class="titre-video"> Les différents dangers du ski
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID4" allowfullscreen></iframe>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+</body>
+</html>

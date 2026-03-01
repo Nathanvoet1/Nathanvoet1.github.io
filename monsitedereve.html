@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon site de rêve</title>
+<link rel="stylesheet" href="style.css"> 
+
+<style>
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #ffffff;
+        color: #222;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background: #c40000;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+
+    nav {
+        background: white;
+        border-bottom: 3px solid #c40000;
+        text-align: center;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #c40000;
+        font-weight: bold;
+        margin: 0 20px;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: black;
+    }
+
+    section {
+        padding: 70px 10%;
+    }
+
+    h2 {
+        color: #c40000;
+        font-size: 28px;
+        margin-bottom: 25px;
+        border-left: 6px solid #c40000;
+        padding-left: 12px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    .card {
+        border: 2px solid #c40000;
+        padding: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        background: #c40000;
+        color: white;
+        transform: translateY(-5px);
+    }
+
+    .logo-section {
+        text-align: center;
+    }
+
+    .logo-section img {
+        width: 220px;
+        transition: 0.3s;
+    }
+
+    .logo-section img:hover {
+        transform: scale(1.1);
+    }
+
+    footer {
+        background: #c40000;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+</style>
+</head>
+<body class="reves-page">
+
+<header>
+<a href="index.html" class="back-arrow">Accueil</a>
+    <h1>Mon site de rêve</h1>
+    <p>LOSC Lille</p>
+	<div class="logo-position">
+<img class="logo" src="logo-Losc.jpeg" alt="logo du Losc">
+</div> 
+	<table id="bloc-menu" border="1">
+	<tr>
+		<th><a href="index.html"> Accueil </a></th>
+		<th><a href="productions.html">Productions scolaires</a></th>
+		<th><a href="passions.html">mes Passions</a></th>
+		<th><a href="videos.html">mes vidéos</a></th>
+		<th><a href="monsitedereve.html">mon site de rêve</a></th>
+	</tr>
+	</table> <br/> 
+	<div id="contenu">
+</div>
+</header>
+
+<nav>
+    <a href="#histoire">Histoire</a>
+    <a href="#palmares">Palmarès</a>
+    <a href="#joueurs">Joueurs</a>
+    <a href="#matchs">Grands Matchs</a>
+    <a href="#logo">Logo</a>
+</nav>
+
+<section id="histoire">
+    <h2>Histoire du club</h2>
+
+    <h3>Création (1944)</h3>
+    <p>Le LOSC naît en 1944 de la fusion de clubs lillois.</p>
+
+    <h3>Années 40-50</h3>
+    <p>Période dorée avec plusieurs titres nationaux.</p>
+
+    <h3>Périodes difficiles</h3>
+    <p>Alternance entre Ligue 1 et Ligue 2.</p>
+
+    <h3>Renouveau & 2021</h3>
+    <p>Champion de France en 2021 après une saison exceptionnelle.</p>
+</section>
+
+<section id="palmares">
+    <h2>Palmarès</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Ligue 1</h3>
+            <p>1946 • 1954 • 2011 • 2021</p>
+        </div>
+        <div class="card">
+            <h3>Coupe de France</h3>
+            <p>1946 • 1947 • 1948 • 1953 • 1955 • 2011</p>
+        </div>
+        <div class="card">
+            <h3>Trophée des Champions</h3>
+            <p>2021</p>
+        </div>
+    </div>
+</section>
+
+<section id="joueurs">
+    <h2>Joueurs emblématiques</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Eden Hazard</h3>
+            <p>Star révélée au club avant de devenir une référence mondiale.</p>
+        </div>
+        <div class="card">
+            <h3>Rio Mavuba</h3>
+            <p>Capitaine emblématique du doublé 2011.</p>
+        </div>
+        <div class="card">
+            <h3>Yohan Cabaye</h3>
+            <p>Formé au club, champion de France.</p>
+        </div>
+        <div class="card">
+            <h3>Jonathan David</h3>
+            <p>Buteur clé du titre 2021.</p>
+        </div>
+    </div>
+</section>
+
+<section id="matchs">
+    <h2>Les plus grands matchs</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>LOSC vs PSG (2019)</h3>
+            <p>Victoire exeptionelle 5-1.</p>
+        </div>
+        <div class="card">
+            <h3>LOSC vs Real de madrid (2024)</h3>
+            <p>Victoire historique 1-0.</p>
+        </div>
+        <div class="card">
+            <h3>Derby contre Lens</h3>
+            <p>Rivalité historique du Nord.</p>
+        </div>
+        <div class="card">
+            <h3>LOSC vs AC Milan</h3>
+            <p>Exploit européen mémorable.</p>
+        </div>
+    </div>
+</section>
+
+<section class="logo-large">
+    <h2>Logo du club</h2>
+    <img src="ancienlogo.jpeg" alt="Logo LOSC">  
+</section>
+<footer>
+ Le site de rêve de Nathan
+</footer>
+
+</body>
+</html>

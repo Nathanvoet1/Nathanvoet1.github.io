@@ -1,0 +1,287 @@
+ iframe {
+	
+height:70vh;
+width:70%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #5479EB; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.presentation {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.presentation img {
+  width: 120px;   /* plus fiable que % ici */
+  height: auto;
+}
+
+.texte-presentation {
+  flex: 1;
+  color:#163880;
+}
+th { width: 500px;}
+ul {
+  list-style-image: url(puce-zelda.png); /* image comme puce attention à l’esthétique */
+}
+
+
+#entete-de-page {
+	padding: 5px;
+	height: 100px;
+	background-color:#EDADAD;
+	font-size: 32px;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-align: center;
+}
+#bloc-menu {
+	height: 36px;
+	background-color:#EDCAAD;
+	float: center;
+	color: white;
+}
+#contenu {
+	padding: 10px;
+	background-color:  #7BBAB8;
+	color:#163880;
+}
+#infos {
+	color: #BAF5BC;
+	font-style: italic;
+}
+#pied-de-page {
+	padding: 5px;
+	background-color: #F5D8BA;
+	font-size: 11px;
+}
+
+.bouton.active {
+Color:#9D08F3;
+}	
+
+.bouton {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	color: #f34808;
+	font-size: 4rem;
+	line-height: 2em;
+	margin: 0 20px; /* espace entre les boutons */
+}
+
+/*mettre une image aux bords arrondis*/
+
+.arrondie {
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
+}
+
+.arrondie1 {
+-moz-border-radius:100px;
+-webkit-border-radius:100px;
+border-radius:100px;
+}
+
+a:link {
+  color:#163880;
+  text-decoration: none;
+}
+
+a:visited {
+  color:  #18042E;
+  text-decoration: none;
+}
+
+
+a:hover {
+ color: #FFFFFF;
+ text-decoration: none;
+ 
+}
+
+a:active {
+    color: #601EBD;
+	 text-decoration: none;
+}
+.titre-tennis {
+	color: #F2F57D; !important;  /*couleur du texte*/
+	font-family: Arial; !important;   /* police du texte*/
+	font-size: 50px; !important; /* taille du texte  */
+	texte-align: center; !important; /* centre le texte */
+}
+
+.photo-large{
+	float:left;
+	width: 45%;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: block;
+	
+}
+.titre-foot{ 
+font-size 50px;
+margin-top: 0;
+color: green;
+}
+;bloc-texte-tennis{
+	display: flex;
+	align-item: center
+	gap:20px;
+}
+.titre-tennis {
+	font-size: 50px;
+	color: #F2F57D;
+	margin: 0;
+}
+.texte-tennis {
+	font-size: 18px;
+	margin: 0;
+}
+.logo-position {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: -110px;
+	margin-right: 80px;
+}
+.logo {
+	width: 200px;
+	height:auto;
+}
+header h1{
+	font-size: 60px;
+	margin:0;
+}
+header p {
+font-size: 32px;
+margin: 5px 0 0 0;
+}
+.reves-page #bloc-menu{
+	display: none;
+}
+.logo-large img {
+	max-widht: 1800px;
+	max-height: 700px;
+	width: 100%;
+	height:auto;
+object-fit: contain;
+display: block;
+margin:0 auto;
+}
+.back-arrow{
+	position: absolute;
+	left: 20px;
+	top: 15 px;
+font-size: 22px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+.back-arrow:hover{
+text-decoration: underline;
+}
+.titre-ski {
+    color: #004080;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+h3 a:hover {
+    color: #ff6600;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.titre-ski {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.stations {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.station {
+    text-align: center;
+}
+
+.station img {
+    width: 180px;       
+    height: 120px;
+    object-fit: cover;   
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* petit effet au survol */
+.station img:hover {
+    transform: scale(1.05);
+}
+.stations {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+;station {
+	text-align: center;
+}
+
+#titre-ski{
+	margin-top: 0;
+}
+.page-ski {
+    position: relative;
+    overflow-x: hidden;
+}
+.video-caption {
+	margin: 40px 0;
+	text-align: center;
+}
+.titre-vidéo {
+	font-size:40px;
+	font-weight bold;
+	margin-bottom:20px;
+}
+.video-caption iframe {
+	width: 200px;
+	height: 200px;
+	border-radius: 10px
+}
+.video-caption{ 
+display: inline-block;
+width: 30%;
+text-align: center;
+vertical-align: top;
+margin: 0 1%;
+}
+.presentation { 
+font-size: 22px;
+font-family: 'Merriweather', serif;
+color:white;
+}
+.lien-blancs a {
+	color: white;
+}
+.titre-lire {
+	font-size: 28px;
+font-weight: bold;
+color: #f8f8ff;
+}
+	
